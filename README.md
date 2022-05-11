@@ -39,7 +39,3 @@ $ npm install
 ```
 $ pm2 start pm2.json
 ```
-5. You are done! 🎉
-
-## Licensing
-The code of the software is licensed under MIT License. (See [LICENSE](/LICENSE) for details).

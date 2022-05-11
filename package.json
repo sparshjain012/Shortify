@@ -1,0 +1,37 @@
+{
+  "name": "shortify",
+  "version": "1.0.0",
+  "description": "✂  A basic URL shortener under the 'gonda.dev' domain",
+  "main": "app.js",
+  "scripts": {
+    "start": "export NODE_ENV=production&& node app.js",
+    "dev": "export NODE_ENV=development&& npx nodemon -L app.js",
+    "restart": "pm2 restart shortify",
+    "update": "git pull && npm install && npm run restart"
+  },
+  "keywords": [
+    "shortener",
+    "url-shortener",
+    "short-url"
+  ],
+  "author": {
+    "name": "Bálint Gonda",
+    "email": "balint@gonda.dev",
+    "url": "https://github.com/Balinteus"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.3",
+    "express-slow-down": "^1.4.0",
+    "helmet": "^4.2.0",
+    "monk": "^7.3.2",
+    "pug": "^3.0.0",
+    "winston": "^3.3.3",
+    "yup": "^0.32.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
